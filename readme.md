@@ -2,6 +2,8 @@
 
 This Bash script automates a *Deauthentication Attack* with *MAC address spoofing* using aircrack-ng, macchanger, and basic Linux networking tools.
 
+# WARNING: Use only on networks you own or are authorized to test. The author is not responsible for misuse.
+
 ## What It Does
 
 - Spoofs your wireless adapter's MAC address
@@ -29,3 +31,11 @@ This Bash script automates a *Deauthentication Attack* with *MAC address spoofin
 ```bash
 chmod +x deauth_mac_spoof.sh
 sudo ./deauth_mac_spoof.sh
+
+## After Attack settings (Must)
+- Disable the monitor mode and restart the Network.
+```bash
+sudo airmon-ng stop <monitor_interface>
+sudo service NetworkManager restart
+
+

@@ -29,8 +29,8 @@ This Bash script automates a *Deauthentication Attack* with *MAC address spoofin
 ## Usage
 
 ```bash
-chmod +x deauth_attack.sh
-sudo ./deauth_attack.sh
+chmod +x deauth-attack.sh
+sudo ./deauth-attack.sh
 ```
 ## After Attack settings (Must)
 - Disable the monitor mode and restart the Network.
